@@ -1,0 +1,21 @@
+{
+  "name": "byzantine-software-website",
+  "version": "1.0.0",
+  "description": "A single-page website for Byzantine Software, showcasing peer-to-peer software solutions.",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "keywords": [
+    "byzantine",
+    "software",
+    "peer-to-peer",
+    "website"
+  ],
+  "author": "ByzantineDev",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
