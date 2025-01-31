@@ -1,0 +1,20 @@
+
+# Install all dependencies and dev tools
+# Ideally we use cargo to install all of them for simple dev setup on any OS.
+[tasks.setup]
+script = '''
+cargo install --git https://github.com/getzola/zola --tag 0.19.2
+'''
+
+# Build and serve the site locally
+[tasks.serve]
+script = '''
+echo "\nLOCAL: [http://localhost:2222]\n"
+zola --root site serve --output-dir zola-serve --force --interface 0.0.0.0 --port 2222 --base-url /
+'''
+
+# Build publish ready files for Github Pages
+[tasks.gh-pages]
+script = '''
+zola --root site build --output-dir docs --force
+'''

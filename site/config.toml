@@ -1,0 +1,79 @@
+# The URL the site will be built for
+base_url = "https://byzantinesoftware.com"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+theme = "kita"
+
+# The site title and description; used in feeds by default.
+title = "Byzantine Software"
+description = "Building Vloxverse, a novel creative sandbox based on subdivisible voxels."
+
+# The default site author.
+author = "ByzantineDev"
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+# The profile on home page.
+[extra.profile]
+name = "ByzantineDev"
+bio = "Building Vloxverse, a novel creative sandbox based on subdivisible voxels."
+# The URL of avatar.
+avatar_url = "icons/avatar.png"
+# Invert color in dark mode.
+avatar_invert = false
+
+# The social icons below the profile on the home page.
+# The `name` should be the file name of static/icons/*.svg or the icon name of https://simpleicons.org/
+[[extra.profile.social]]
+name = "x"
+url = "https://x.com/ByzantineDev"
+
+[[extra.profile.social]]
+name = "youtube"
+url = "https://www.youtube.com/@byzantinedev"
+
+[[extra.profile.social]]
+name = "tiktok"
+url = "https://www.tiktok.com/@byzantinedev"
+
+[[extra.profile.social]]
+name = "instagram"
+url = "https://www.instagram.com/byzantine.dev"
+
+[[extra.profile.social]]
+name = "discord"
+url = "https://discord.gg/YbzcqnP7JS"
+
+[[extra.profile.social]]
+name = "github"
+url = "https://github.com/byzantinedev"
+
+
+# The top menu.
+# [[extra.menu]]
+# name = "About"
+# url = "$BASE_URL/about"
+
+[extra.style]
+# The custom background color.
+# bg_color = ""
+
+# The custom background color in dark mode.
+# bg_dark_color = ""
+
+# Enable header blur.
+# header_blur = true
+
+# The custom header color, only available when `header_blur` is false.
+# header_color = ""
+
+# The custom header color in dark mode, only available when `header_blur` is false.
+# header_dark_color = ""

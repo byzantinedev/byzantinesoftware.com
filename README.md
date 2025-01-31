@@ -1,40 +1,22 @@
-# Byzantine Software Website
+# Byzantine Software
 
-This is a single-page website project for Byzantine Software, a company specializing in peer-to-peer software development.
-
-## Project Structure
-
-```
-byzantine-software-website
-├── src
-│   ├── index.html        # Main HTML document
-│   ├── styles
-│   │   └── main.css      # Styles for the website
-│   ├── scripts
-│   │   └── main.js       # JavaScript for interactivity
-├── package.json          # npm configuration file
-└── README.md             # Project documentation
-```
+Hi, I'm ByzantineDev. This is the site for my blog. Follow my progress as I develop [Vloxverse](https://vloxverse.com), a novel creative sandbox based on subdivisible voxels.
 
 ## Setup Instructions
 
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   ```
+```
+cargo install cargo-make
+cargo make setup
+```
 
-2. Navigate to the project directory:
-   ```
-   cd byzantine-software-website
-   ```
+## Serve site locally
 
-3. Install dependencies (if any):
-   ```
-   npm install
-   ```
+```
+cargo make serve
+```
 
-4. Open `src/index.html` in your web browser to view the website.
+## Build files for Github Pages
 
-## Overview
-
-The Byzantine Software website serves as a platform to showcase our peer-to-peer software solutions. It provides users with information about our products, services, and company values. The website is designed to be user-friendly and responsive, ensuring a seamless experience across devices.
+```
+cargo make gh-pages
+```
