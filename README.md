@@ -1,22 +1,21 @@
 # Byzantine Software
 
-Hi, I'm ByzantineDev. This is the site for my blog. Follow my progress as I develop [Vloxverse](https://vloxverse.com), a novel creative sandbox based on subdivisible voxels.
+Hi, I'm ByzantineDev. This is the site for my blog. Follow my progress as I develop [Vloxverse](https://www.vloxverse.com), a novel creative sandbox based on subdivisible voxels.
 
-## Setup Instructions
-
-```
-cargo install cargo-make
-cargo make setup
-```
-
-## Serve site locally
+## Setup
 
 ```
-cargo make serve
+cargo install --git https://github.com/getzola/zola --tag 0.19.2
 ```
 
-## Build files for Github Pages
+## Run locally
 
 ```
-cargo make gh-pages
+zola serve
+```
+
+## Publish
+
+```
+zola build --output-dir docs --force  
 ```
